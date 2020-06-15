@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "495621657179",
+    "firebase_url": "https://expocriticalalert.firebaseio.com",
+    "project_id": "expocriticalalert",
+    "storage_bucket": "expocriticalalert.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495621657179:android:b3202458da51906297657e",
+        "android_client_info": {
+          "package_name": "com.example.expo_critical_alert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495621657179-j4vgs37ckdgtqq3dj2qkm9bdgqriigf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1Gj-P5Z3mPXrCDZSJmkdG5Om_TTESGFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "495621657179-j4vgs37ckdgtqq3dj2qkm9bdgqriigf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
