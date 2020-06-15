@@ -1,19 +1,38 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Alert, StyleSheet, Text, View } from 'react-native';
+import { Notifications, Permissions } from 'expo';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
-  );
+
+//取得のためのコード
+async function registerForPushNotificationsAsync() {
+
+  //warningがでるのを防ぐためにtry catchを入れる
+  try {
+
+    let token = await Notifications.getExpoPushTokenAsync();
+
+    //コンソールに出力
+    console.log(token);
+    Alert.alert(
+       token
+    )
+
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+export default class App extends React.Component {
+  componentDidMount() {
+    //呼び出し
+    registerForPushNotificationsAsync();
+  }
+  render() {
+    return (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text>Open up App.js to start working on your app!</Text>
+      </View>
+    );
+  }
+}

@@ -23,6 +23,11 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.example.expo_critical_alert",
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 1
     }
   }
 }
