@@ -6,32 +6,33 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "adb": "^0.2.0",
     "expo": "^37.0.0",
+    "expo-permissions": "~8.1.0",
     "expo-splash-screen": "^0.2.3",
     "expo-updates": "~0.2.0",
+    "npm": "^6.14.5",
     "react": "~16.9.0",
     "react-dom": "16.9.0",
-    "react-native": "~0.61.5",
+    "react-native": "^0.62.2",
+    "react-native-dialog": "^5.6.0",
+    "react-native-firebase": "^5.6.0",
     "react-native-gesture-handler": "~1.6.0",
     "react-native-reanimated": "~1.7.0",
     "react-native-screens": "~2.2.0",
     "react-native-unimodules": "~0.9.0",
-    "react-native-web": "^0.11.7",
-    "adb": "^0.2.0",
-    "expo-permissions": "~8.1.0",
-    "react-native-dialog": "^5.6.0",
-    "react-native-firebase": "^5.6.0"
+    "react-native-web": "^0.11.7"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
     "@types/react": "^16.9.11",
     "@types/react-native": "^0.60.22",
     "babel-jest": "~25.2.6",
-    "babel-preset-expo": "^8.1.0",
+    "babel-preset-expo": "^8.2.1",
     "jest": "~25.2.6",
     "jetifier": "^1.6.6",
     "react-test-renderer": "~16.9.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.5"
   },
   "private": true
 }
